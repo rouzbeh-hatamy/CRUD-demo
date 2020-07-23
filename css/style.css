@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200");
+body {
+  font-family: "Raleway", sans-serif;
+  background: #eee;
+}
+
+.wrapper {
+  position: absolute;
+  top: 3%;
+  left: 40%;
+  width: 300px;
+  height: 570px;
+  perspective: 900px;
+}
+
+.container {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s all ease;
+  transform: rotateX(50deg) scale(0.7);
+  perspective: 900px;
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+}
+
+#c0 {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
+  z-index: 300;
+  box-shadow: 0px 20px 100px #555;
+}
+
+#c1 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+  left: 100%;
+  z-index: 300;
+}
+
+#c2 {
+  left: -100%;
+  z-index: 300;
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+}
+
+.container:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: 0.5s all ease;
+  z-index: 400;
+}
+
+.container:hover #react {
+  animation: react infinite 9s linear;
+}
+
+.container:hover #jq1 {
+  animation: jquery infinite 2s 0.3s;
+}
+
+.container:hover #jq2 {
+  animation: jquery infinite 2s 0.2s ease-in-out;
+}
+
+.container:hover #jq3 {
+  animation: jquery infinite 2s ease-in-out;
+}
+
+.image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 45%;
+  background: linear-gradient(to top, #eba65b 30%, #d99267 100%);
+}
+
+#i1 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+}
+
+#i2 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+}
+
+span {
+  position: absolute;
+  top: 0%;
+  left: 55%;
+  border-radius: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.story {
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  height: 57%;
+  width: 100%;
+  background: linear-gradient(to bottom, #eba65b 0%, #d99267 40%);
+  z-index: 30;
+}
+
+#s1 {
+  background: linear-gradient(to top, #5b62a2 0%, #7b88d1 100%);
+}
+
+#s2 {
+  background: linear-gradient(to top, #5b62a2 0%, #7b88d1 120%);
+}
+
+.info {
+  position: absolute;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+h3 {
+  text-align: center;
+  text-shadow: 0px 0px 10px #eee;
+  color: #eee;
+  letter-spacing: 2px;
+}
+
+h4 {
+  color: #111;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  letter-spacing: 2px;
+}
+
+.title {
+  top: 12%;
+  left: 39%;
+}
+
+h1 {
+  color: #111;
+  position: fixed;
+  top: 0%;
+  left: 30%;
+  letter-spacing: 2px;
+}
+
+.page {
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  left: 0%;
+  height: 20%;
+  z-index: 30;
+}
+
+@keyframes entry {
+  0% {
+    top: -20%;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+.name-jq #name {
+  transform: translate(-80px, 0px);
+}
+
+.name-jq #logo {
+  transform: translate(170px, 100px);
+}
+
+a,
+a:hover {
+  text-decoration: unset;
+  color: white;
+}
+
+ul {
+  font-weight: bolder;
+}
+
+@keyframes react {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes jquery {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(15px, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.copyright {
+  position: absolute;
+  top: 100%;
+  width: 400px;
+}
+/*# sourceMappingURL=style.css.map */
